@@ -1,4 +1,63 @@
-9-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableSubscribeOn$SubscribeOnObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: HeapAnalysisSuccess(heapDumpFile=/data/user/0/com.seljabali.rxandroidble2leak/files/leakcanary/2019-09-04_18-25-19_035.hprof, createdAtTimeMillis=1567646736756, analysisDurationMillis=16339, applicationLeaks=[ApplicationLeak(className=com.seljabali.rxandroidble2leak.ScanBleFragment, leakTrace=
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ┬
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ android.bluetooth.le.BluetoothLeScanner$BleScanCallbackWrapper
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    GC Root: Global variable in native code
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ BluetoothLeScanner$BleScanCallbackWrapper.mScanCallback
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                                ~~~~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ com.polidea.rxandroidble2.internal.operations.ScanOperationApi21$1
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Anonymous subclass of android.bluetooth.le.ScanCallback
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ScanOperationApi21$1.val$emitter
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                           ~~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableCreate$CreateEmitter.observer
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                     ~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeOnObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableSubscribeOn$SubscribeOnObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                                ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableUnsubscribeOn$UnsubscribeObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableUnsubscribeOn$UnsubscribeObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                                  ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ com.polidea.rxandroidble2.internal.serialization.FIFORunnableEntry$1
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Anonymous class implementing io.reactivex.Observer
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ FIFORunnableEntry$1.this$0
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                          ~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ com.polidea.rxandroidble2.internal.serialization.FIFORunnableEntry
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ FIFORunnableEntry.operationResultObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                        ~~~~~~~~~~~~~~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableCreate$CreateEmitter.observer
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                     ~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableUnsubscribeOn$UnsubscribeObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableUnsubscribeOn$UnsubscribeObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                                  ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableMap$MapObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableMap$MapObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableDoOnEach$DoOnEachObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableDoOnEach$DoOnEachObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                          ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableFlatMap$InnerObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableFlatMap$InnerObserver.parent
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                      ~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableFlatMap$MergeObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableFlatMap$MergeObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                      ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeOnObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableSubscribeOn$SubscribeOnObserver.downstream
 2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                                ~~~~~~~~~~
 2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableObserveOn$ObserveOnObserver
 2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN

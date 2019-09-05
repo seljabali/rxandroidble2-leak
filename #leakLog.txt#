@@ -1,0 +1,29 @@
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: HeapAnalysisSuccess(heapDumpFile=/data/user/0/com.seljabali.rxandroidble2leak/files/leakcanary/2019-09-04_18-25-19_035.hprof, createdAtTimeMillis=1567646736756, analysisDurationMillis=16339, applicationLeaks=[ApplicationLeak(className=com.seljabali.rxandroidble2leak.ScanBleFragment, leakTrace=
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò Ì
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¼œò   android.bluetooth.le.BluetoothLeScanner$BleScanCallbackWrapper
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    GC Root: Global variable in native code
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    œôöó BluetoothLeScanner$BleScanCallbackWrapper.mScanCallback
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢                                                ~~~~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¼œò   com.polidea.rxandroidble2.internal.operations.ScanOperationApi21$1
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Anonymous subclass of android.bluetooth.le.ScanCallback
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    œôöó ScanOperationApi21$1.val$emitter
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢                           ~~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¼œò   io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    œôöó ObservableCreate$CreateEmitter.observer
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢                                     ~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¼œò   io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeOnObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    œôöó ObservableSubscribeOn$SubscribeOnObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢                                                ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¼œò   io.reactivex.internal.operators.observable.ObservableUnsubscribeOn$UnsubscribeObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    œôöó ObservableUnsubscribeOn$UnsubscribeObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢                                                  ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¼œò   com.polidea.rxandroidble2.internal.serialization.FIFORunnableEntry$1
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    Anonymous class implementing io.reactivex.Observer
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    œôöó FIFORunnableEntry$1.this$0
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: œò ¢    0E
