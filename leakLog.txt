@@ -1,0 +1,21 @@
+9-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableSubscribeOn$SubscribeOnObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                                ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableObserveOn$ObserveOnObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableObserveOn$ObserveOnObserver.downstream
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                            ~~~~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ io.reactivex.internal.operators.observable.ObservableDoOnEach$DoOnEachObserver
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ObservableDoOnEach$DoOnEachObserver.onError
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                          ~~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ├─ com.seljabali.rxandroidble2leak.ScanBleFragment$startScan$1
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Leaking: UNKNOWN
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    Anonymous class implementing io.reactivex.functions.Consumer
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │    ↓ ScanBleFragment$startScan$1.this$0
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: │                                  ~~~~~~
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ╰→ com.seljabali.rxandroidble2leak.ScanBleFragment
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ​     Leaking: YES (Fragment#mFragmentManager is null and ObjectWatcher was watching this)
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ​     key = da9104d1-b6d9-4cf7-a044-681a2595fc71
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ​     watchDurationMillis = 13491
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: ​     retainedDurationMillis = 8489
+2019-09-04 18:25:36.760 20056-20556/com.seljabali.rxandroidble2leak D/LeakCanary: , retainedHeapByteSize=1577)], libraryLeaks=[])
