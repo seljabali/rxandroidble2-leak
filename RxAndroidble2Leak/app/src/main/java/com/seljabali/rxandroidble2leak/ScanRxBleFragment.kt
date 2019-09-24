@@ -15,14 +15,14 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 
-class ScanBleFragment : Fragment() {
+class ScanRxBleFragment : Fragment() {
 
     companion object {
         private const val REQUEST_ENABLE_BLUETOOTH: Int = 1239
         private const val REQUEST_COARSE_LOCATION: Int = 9358
         private const val REQUEST_ENABLE_GPS: Int = 1514
-        val TAG: String = ScanBleFragment::class.java.simpleName
-        fun newInstance(): ScanBleFragment = ScanBleFragment()
+        val TAG: String = ScanRxBleFragment::class.java.simpleName
+        fun newInstance(): ScanRxBleFragment = ScanRxBleFragment()
     }
 
     private var scanDisposable: Disposable? = null
@@ -113,17 +113,13 @@ class ScanBleFragment : Fragment() {
     }
 
     private fun stopScan() {
-        clearScanSubscription()
-    }
-
-    private fun onScanError() {
-    }
-
-    private fun clearScanSubscription() {
         if (scanDisposable?.isDisposed == false) {
             scanDisposable?.dispose()
         }
         scanDisposable = null
+    }
+
+    private fun onScanError() {
     }
 
     private fun isScanning(): Boolean = scanDisposable != null && !scanDisposable!!.isDisposed
