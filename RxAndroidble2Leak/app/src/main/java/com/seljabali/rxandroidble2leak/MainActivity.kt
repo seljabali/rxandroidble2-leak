@@ -9,8 +9,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         RxBle.init(this)
-        launchScanCallBackFragment()
-//        launchScanRxFragment()
+//        launchScanCallBackFragment()
+        launchScanRxFragment()
     }
 
     private fun launchScanRxFragment() {
