@@ -10,3 +10,9 @@ Steps to reproduce:
 - Pull system drop down
 - Wait for Canary to analyze heap
 - Canary momentarily shows leak.
+
+## Issue
+https://github.com/Polidea/RxAndroidBle/issues/607
+
+## Update
+Fixed in https://github.com/Polidea/RxAndroidBle/pull/708 🎉
